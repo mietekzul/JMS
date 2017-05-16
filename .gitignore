@@ -67,3 +67,5 @@ crashlytics-build.properties
 fabric.properties
 .idea/
 JMS2.iml
+JMS1.1/JMS1.1.iml
+JMS2/target/
