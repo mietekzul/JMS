@@ -1,4 +1,4 @@
-package pl.raziel.jms2.utils;
+package pl.raziel.jms.utils;
 
 import javax.jms.JMSException;
 import javax.jms.Message;
@@ -14,6 +14,6 @@ public class JMSUtils {
 		System.out.println("JMSType__ " + message.getJMSType());
 		System.out.println("JMSDestination__ " + message.getJMSDestination());
 		System.out.println("JMSReplyTo__ " + message.getJMSReplyTo());
-		System.out.println("JMSDeliveryTime__ " + message.getJMSDeliveryTime());
+//		System.out.println("JMSDeliveryTime__ " + message.getJMSDeliveryTime());
 	}
 }

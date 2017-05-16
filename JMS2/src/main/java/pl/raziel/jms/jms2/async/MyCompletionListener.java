@@ -1,4 +1,4 @@
-package pl.raziel.jms2.async;
+package pl.raziel.jms.jms2.async;
 
 import javax.jms.CompletionListener;
 import javax.jms.Message;

@@ -1,4 +1,4 @@
-package pl.raziel.jms2;
+package pl.raziel.jms.jms2;
 
 import javax.jms.ConnectionFactory;
 import javax.jms.DeliveryMode;

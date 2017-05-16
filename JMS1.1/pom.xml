@@ -11,4 +11,11 @@
 
     <artifactId>JMS1.1</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-broker</artifactId>
+            <version>5.14.5</version>
+        </dependency>
+    </dependencies>
 </project>
