@@ -23,6 +23,7 @@
     <modules>
         <module>JMS2</module>
         <module>JMS1.1</module>
+        <module>REQUEST_REPLY</module>
     </modules>
 
     <dependencies>
