@@ -17,6 +17,7 @@ public class JMS2Sender {
 					.createProducer()
 //					.setDeliveryDelay(5000)	// message is sent but broker is managing the delay - there could be huge queue and finally it could sent be longer than a 5 seconds
 					.setProperty("TraderName", "Daniel")
+//					.setTimeToLive(10000)
 					.setDeliveryMode(DeliveryMode.NON_PERSISTENT)
 					.send(queue, "SELL APPL 1500 SHARES");
 			System.out.println("message sent");
