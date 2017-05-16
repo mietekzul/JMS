@@ -1,4 +1,4 @@
-package pl.raziel.jms2;
+package pl.raziel.jms2.shared;
 
 import javax.jms.ConnectionFactory;
 import javax.jms.JMSConsumer;
