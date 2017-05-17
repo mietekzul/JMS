@@ -70,8 +70,6 @@ JMS2.iml
 JMS1.1/JMS1.1.iml
 JMS2/target/
 JMS.iml
-JMS1.1/src/main/resources/
-JMS1.1/src/test/
-JMS2/src/main/resources/
-JMS2/src/test/
 REQUEST_REPLY/REQUEST_REPLY.iml
+PUBLISH_SUBSCRIBE_MESSAGING/PUBLISH_SUBSCRIBE_MESSAGING.iml
+REQUEST_REPLY/target/

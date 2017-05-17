@@ -23,7 +23,8 @@
     <modules>
         <module>JMS2</module>
         <module>JMS1.1</module>
-        <module>REQUEST_REPLY</module>
+        <module>REQUEST_REPLY_MESSAGING</module>
+        <module>PUBLISH_SUBSCRIBE_MESSAGING</module>
     </modules>
 
     <dependencies>
@@ -31,6 +32,16 @@
             <groupId>javax.jms</groupId>
             <artifactId>javax.jms-api</artifactId>
             <version>2.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-broker</artifactId>
+            <version>5.14.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.messaging.mq</groupId>
+            <artifactId>imq</artifactId>
+            <version>4.4.2</version>
         </dependency>
     </dependencies>
 </project>
