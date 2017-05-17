@@ -26,7 +26,8 @@ public class JMSReceiver {
 		System.out.printf("trade confirmation: %s%n", confirmation);
 
 		TextMessage outmsg = session.createTextMessage(confirmation);
-		outmsg.setJMSCorrelationID(message.getJMSMessageID());
+//		no need in queue
+//		outmsg.setJMSCorrelationID(message.getJMSMessageID());
 		MessageProducer sender = session.createProducer(message.getJMSReplyTo());
 		sender.send(outmsg);
 
