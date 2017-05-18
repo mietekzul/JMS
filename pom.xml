@@ -26,6 +26,7 @@
         <module>REQUEST_REPLY_MESSAGING</module>
         <module>PUBLISH_SUBSCRIBE_MESSAGING</module>
         <module>SELECTORS_AND_FILTERING</module>
+        <module>ACKNOWLEDGMENT_MODELS</module>
     </modules>
 
     <dependencies>
