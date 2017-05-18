@@ -25,6 +25,7 @@
         <module>JMS1.1</module>
         <module>REQUEST_REPLY_MESSAGING</module>
         <module>PUBLISH_SUBSCRIBE_MESSAGING</module>
+        <module>SELECTORS_AND_FILTERING</module>
     </modules>
 
     <dependencies>
