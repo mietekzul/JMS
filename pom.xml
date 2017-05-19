@@ -27,6 +27,7 @@
         <module>PUBLISH_SUBSCRIBE_MESSAGING</module>
         <module>SELECTORS_AND_FILTERING</module>
         <module>ACKNOWLEDGMENT_MODELS</module>
+        <module>TRANSACTED_SESSIONS</module>
     </modules>
 
     <dependencies>
