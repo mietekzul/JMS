@@ -28,6 +28,7 @@
         <module>SELECTORS_AND_FILTERING</module>
         <module>ACKNOWLEDGMENT_MODELS</module>
         <module>TRANSACTED_SESSIONS</module>
+        <module>EMBEDDED_BROKER</module>
     </modules>
 
     <dependencies>
