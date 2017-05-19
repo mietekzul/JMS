@@ -22,6 +22,7 @@ public class JMSVmReceiver implements MessageListener {
 			Queue queue = session.createQueue("EM_EMBEDDED_TRADE.Q");
 			MessageConsumer receiver = session.createConsumer(queue);
 			receiver.setMessageListener(this);
+			System.out.println("Receiver (" + id + ") Waiting for messages");
 		} catch (JMSException e) {
 			e.printStackTrace();
 		}
