@@ -30,6 +30,7 @@
         <module>TRANSACTED_SESSIONS</module>
         <module>EMBEDDED_BROKER</module>
         <module>MESSAGE_BROWSING_AND_METADATA</module>
+        <module>SENDING_IMAGES_DOCUMENTS</module>
     </modules>
 
     <dependencies>
