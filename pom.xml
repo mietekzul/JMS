@@ -29,6 +29,7 @@
         <module>ACKNOWLEDGMENT_MODELS</module>
         <module>TRANSACTED_SESSIONS</module>
         <module>EMBEDDED_BROKER</module>
+        <module>MESSAGE_BROWSING_AND_METADATA</module>
     </modules>
 
     <dependencies>
