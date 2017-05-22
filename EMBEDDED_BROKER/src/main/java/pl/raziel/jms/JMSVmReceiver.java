@@ -16,10 +16,11 @@ public class JMSVmReceiver implements MessageListener {
 
 	public JMSVmReceiver(int id) {
 		this.id = id;
-		try (Connection connection = new ActiveMQConnectionFactory("vm://embedded1").createConnection()) {
+		try {
+			Connection connection = new ActiveMQConnectionFactory("vm://embedded1").createConnection();
 			connection.start();
 			Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-			Queue queue = session.createQueue("EM_EMBEDDED_TRADE.Q");
+			Queue queue = session.createQueue("EM_EMBED_TRADE.Q");
 			MessageConsumer receiver = session.createConsumer(queue);
 			receiver.setMessageListener(this);
 			System.out.println("Receiver (" + id + ") Waiting for messages");
@@ -33,7 +34,7 @@ public class JMSVmReceiver implements MessageListener {
 		try {
 			TextMessage textMessage = (TextMessage) message;
 			Thread.sleep(1000);
-			System.out.println("Trade receivied: (" + id + "): " + textMessage.getText());
+			System.out.println("Trade placed: (" + id + "): " + textMessage.getText());
 		} catch (InterruptedException | JMSException e) {
 			e.printStackTrace();
 		}

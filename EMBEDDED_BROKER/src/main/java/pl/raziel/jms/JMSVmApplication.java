@@ -7,7 +7,14 @@ import java.util.List;
 
 public class JMSVmApplication {
 
-	private List<String> trades = Arrays.asList();
+	private List<String> trades = Arrays.asList(
+			"BUY AAPL 2000",
+			"BUY IBM 4400",
+			"BUT ATT 2400",
+			"SELL AAPL 1000",
+			"SELL IBM 2200",
+			"SELL ATT 1200"
+	);
 
 	public static void main(String[] args) {
 		new Thread(() -> {
@@ -25,8 +32,7 @@ public class JMSVmApplication {
 			brokerService.setBrokerName("embedded1");
 			brokerService.setPersistent(false);
 			brokerService.start();
-			System.out.println("embedded broker started");
-
+			System.out.println("Embedded broker started");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -34,6 +40,13 @@ public class JMSVmApplication {
 
 	private void startTradeProcessors() {
 		new JMSVmReceiver(1);
+		new JMSVmReceiver(2);
+		new JMSVmReceiver(3);
+		new JMSVmReceiver(4);
+		new JMSVmReceiver(5);
+		new JMSVmReceiver(6);
+		new JMSVmReceiver(7);
+		new JMSVmReceiver(8);
 	}
 
 	private void processTrades() {

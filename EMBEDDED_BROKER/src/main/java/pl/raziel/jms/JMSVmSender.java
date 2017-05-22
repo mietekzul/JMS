@@ -14,7 +14,8 @@ public class JMSVmSender {
 	private Session session;
 
 	public JMSVmSender() {
-		try (Connection connection = new ActiveMQConnectionFactory("vm://embedded1").createConnection()) {
+		try {
+			Connection connection = new ActiveMQConnectionFactory("vm://embedded1").createConnection();
 			connection.start();
 			session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
 			Queue queue = session.createQueue("EM_EMBED_TRADE.Q");
@@ -28,7 +29,7 @@ public class JMSVmSender {
 		try {
 			TextMessage message = session.createTextMessage(trade);
 			sender.send(message);
-			System.out.println("Message sent");
+			System.out.println("Trade sent");
 		} catch (JMSException e) {
 			e.printStackTrace();
 		}
