@@ -13,7 +13,7 @@ public class JMSReceiver {
 
 		JmsTemplate jmsTemplate = (JmsTemplate) ctx.getBean("jmsTemplate");
 		System.out.println("Waiting 4 messages");
-		TextMessage message = (TextMessage) jmsTemplate.receive();
+		TextMessage message = (TextMessage) jmsTemplate.receiveSelected("Trader = 'Mark'");		// filter
 
 		System.out.println("Message: " + message.getText());
 		System.out.println("Trader: " + message.getStringProperty("Trader"));

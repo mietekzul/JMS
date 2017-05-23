@@ -32,6 +32,7 @@
         <module>MESSAGE_BROWSING_AND_METADATA</module>
         <module>SENDING_IMAGES_DOCUMENTS</module>
         <module>SPRING_JMS</module>
+        <module>MESSAGE_DRIVEN_POJOs</module>
     </modules>
 
     <dependencies>
