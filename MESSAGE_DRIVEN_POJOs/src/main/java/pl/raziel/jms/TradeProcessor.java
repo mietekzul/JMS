@@ -1,16 +1,8 @@
 package pl.raziel.jms;
 
-import org.springframework.jms.listener.SessionAwareMessageListener;
+public class TradeProcessor/* implements SessionAwareMessageListener */ {
 
-import javax.jms.JMSException;
-import javax.jms.Message;
-import javax.jms.MessageProducer;
-import javax.jms.Session;
-import javax.jms.TextMessage;
-
-public class TradeProcessor implements SessionAwareMessageListener {
-
-	@Override
+	/*@Override
 	public void onMessage(Message message, Session session) throws JMSException {
 		try {
 			TextMessage msg = (TextMessage) message;
@@ -23,5 +15,9 @@ public class TradeProcessor implements SessionAwareMessageListener {
 		} catch (JMSException e) {
 			e.printStackTrace();
 		}
+	}*/
+
+	public void placeTrade(String body) {
+		System.out.println("Message: " + body);
 	}
 }
